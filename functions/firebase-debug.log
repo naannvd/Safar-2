@@ -1,0 +1,414 @@
+[debug] [2024-12-12T21:18:08.967Z] ----------------------------------------------------------------------
+[debug] [2024-12-12T21:18:08.970Z] Command:       D:\Softwares\node.js\node.exe C:\Users\mrg18\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2024-12-12T21:18:08.971Z] CLI Version:   13.28.0
+[debug] [2024-12-12T21:18:08.971Z] Platform:      win32
+[debug] [2024-12-12T21:18:08.971Z] Node Version:  v20.11.1
+[debug] [2024-12-12T21:18:08.971Z] Time:          Fri Dec 13 2024 02:18:08 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-12-12T21:18:08.971Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-12T21:18:09.058Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2024-12-12T21:18:09.063Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-12T21:18:09.064Z] > authorizing via signed-in user (mrg18188@gmail.com)
+[debug] [2024-12-12T21:18:09.064Z] [iam] checking project safar-6b838 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-12-12T21:18:09.065Z] Checked if tokens are valid: false, expires at: 1733980582761
+[debug] [2024-12-12T21:18:09.065Z] Checked if tokens are valid: false, expires at: 1733980582761
+[debug] [2024-12-12T21:18:09.065Z] > refreshing access token with scopes: []
+[debug] [2024-12-12T21:18:09.067Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-12T21:18:09.067Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-12T21:18:09.478Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-12T21:18:09.478Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-12T21:18:09.502Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions [none]
+[debug] [2024-12-12T21:18:09.502Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:18:09.502Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-12-12T21:18:10.870Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions 200
+[debug] [2024-12-12T21:18:10.870Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-12-12T21:18:10.871Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:10.871Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:10.871Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/safar-6b838/serviceAccounts/safar-6b838@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-12-12T21:18:10.871Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/safar-6b838/serviceAccounts/safar-6b838@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-12-12T21:18:12.382Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/safar-6b838/serviceAccounts/safar-6b838@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-12-12T21:18:12.383Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/safar-6b838/serviceAccounts/safar-6b838@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'safar-6b838'...
+[info] 
+[info] i  deploying functions 
+[debug] [2024-12-12T21:18:12.385Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:12.385Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:12.385Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838 [none]
+[debug] [2024-12-12T21:18:12.690Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838 200
+[debug] [2024-12-12T21:18:12.691Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838 {"projectNumber":"1048390334337","projectId":"safar-6b838","lifecycleState":"ACTIVE","name":"Safar","labels":{"firebase":"enabled"},"createTime":"2024-09-19T20:46:43.698185Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2024-12-12T21:18:12.692Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:12.692Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:12.692Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:12.692Z] Checked if tokens are valid: true, expires at: 1734041888478
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2024-12-12T21:18:12.692Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:12.692Z] Checked if tokens are valid: true, expires at: 1734041888478
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-12-12T21:18:12.693Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:12.693Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:12.693Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-12T21:18:12.693Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:18:12.694Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-12-12T21:18:12.694Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:18:12.694Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudbuild.googleapis.com [none]
+[debug] [2024-12-12T21:18:12.695Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudbuild.googleapis.com x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:18:12.695Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/artifactregistry.googleapis.com [none]
+[debug] [2024-12-12T21:18:12.695Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/artifactregistry.googleapis.com x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:18:14.381Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudbuild.googleapis.com 200
+[debug] [2024-12-12T21:18:14.381Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-12-12T21:18:14.382Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/runtimeconfig.googleapis.com 200
+[debug] [2024-12-12T21:18:14.382Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-12-12T21:18:14.396Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-12T21:18:14.396Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-12-12T21:18:14.397Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/artifactregistry.googleapis.com 200
+[debug] [2024-12-12T21:18:14.397Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-12-12T21:18:14.397Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:14.397Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:14.397Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/safar-6b838/adminSdkConfig [none]
+[debug] [2024-12-12T21:18:15.276Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/safar-6b838/adminSdkConfig 200
+[debug] [2024-12-12T21:18:15.276Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/safar-6b838/adminSdkConfig {"projectId":"safar-6b838","databaseURL":"https://safar-6b838-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"safar-6b838.appspot.com","locationId":"us-central"}
+[debug] [2024-12-12T21:18:15.276Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:15.276Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:15.276Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs [none]
+[debug] [2024-12-12T21:18:15.897Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs 200
+[debug] [2024-12-12T21:18:15.897Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs {"configs":[{"name":"projects/safar-6b838/configs/google"}]}
+[debug] [2024-12-12T21:18:15.897Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:15.897Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:15.897Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables [none]
+[debug] [2024-12-12T21:18:16.220Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables 200
+[debug] [2024-12-12T21:18:16.220Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables {"variables":[{"name":"projects/safar-6b838/configs/google/variables/maps/api_key","updateTime":"2024-09-20T22:30:02.502139656Z"},{"name":"projects/safar-6b838/configs/google/variables/maps_api_key","updateTime":"2024-09-20T23:22:02.660361155Z"}]}
+[debug] [2024-12-12T21:18:16.220Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:16.220Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:16.220Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:16.221Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:16.221Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps/api_key [none]
+[debug] [2024-12-12T21:18:16.221Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps_api_key [none]
+[debug] [2024-12-12T21:18:16.538Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps/api_key 200
+[debug] [2024-12-12T21:18:16.538Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps/api_key {"name":"projects/safar-6b838/configs/google/variables/maps/api_key","updateTime":"2024-09-20T22:30:02.502139656Z","text":"AIzaSyB-DbkubPy5AhkZJX14fR1x2m8VnbG0_PA"}
+[debug] [2024-12-12T21:18:16.731Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps_api_key 200
+[debug] [2024-12-12T21:18:16.731Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps_api_key {"name":"projects/safar-6b838/configs/google/variables/maps_api_key","updateTime":"2024-09-20T23:22:02.660361155Z","text":"AIzaSyB-DbkubPy5AhkZJX14fR1x2m8VnbG0_PA"}
+[debug] [2024-12-12T21:18:16.732Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-12-12T21:18:18.971Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.12.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-12-12T21:18:18.971Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-12-12T21:18:18.973Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-12-12T21:18:18.980Z] Found firebase-functions binary at 'D:\Work\FYP\Safar\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-12-12T21:18:20.508Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8589/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8589/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[info] Serving at port 8589
+
+[debug] [2024-12-12T21:18:30.873Z] FetchError: request to http://127.0.0.1:8589/__/functions.yaml failed, reason: Parse Error: Expected HTTP/
+    at ClientRequest.<anonymous> (C:\Users\mrg18\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at Socket.socketOnData (node:_http_client:544:9)
+    at Socket.emit (node:events:518:28)
+    at Socket.emit (node:domain:488:12)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-12-12T21:18:46.141Z] ----------------------------------------------------------------------
+[debug] [2024-12-12T21:18:46.144Z] Command:       D:\Softwares\node.js\node.exe C:\Users\mrg18\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2024-12-12T21:18:46.144Z] CLI Version:   13.28.0
+[debug] [2024-12-12T21:18:46.144Z] Platform:      win32
+[debug] [2024-12-12T21:18:46.145Z] Node Version:  v20.11.1
+[debug] [2024-12-12T21:18:46.145Z] Time:          Fri Dec 13 2024 02:18:46 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-12-12T21:18:46.145Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-12T21:18:46.206Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2024-12-12T21:18:46.211Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-12T21:18:46.211Z] > authorizing via signed-in user (mrg18188@gmail.com)
+[debug] [2024-12-12T21:18:46.211Z] [iam] checking project safar-6b838 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-12-12T21:18:46.212Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:46.212Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:46.213Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions [none]
+[debug] [2024-12-12T21:18:46.213Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:18:46.214Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-12-12T21:18:47.731Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions 200
+[debug] [2024-12-12T21:18:47.732Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-12-12T21:18:47.732Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:47.732Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:47.732Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/safar-6b838/serviceAccounts/safar-6b838@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-12-12T21:18:47.732Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/safar-6b838/serviceAccounts/safar-6b838@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-12-12T21:18:49.117Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/safar-6b838/serviceAccounts/safar-6b838@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-12-12T21:18:49.118Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/safar-6b838/serviceAccounts/safar-6b838@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'safar-6b838'...
+[info] 
+[info] i  deploying functions 
+[debug] [2024-12-12T21:18:49.120Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:49.120Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:49.121Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838 [none]
+[debug] [2024-12-12T21:18:49.516Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838 200
+[debug] [2024-12-12T21:18:49.516Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838 {"projectNumber":"1048390334337","projectId":"safar-6b838","lifecycleState":"ACTIVE","name":"Safar","labels":{"firebase":"enabled"},"createTime":"2024-09-19T20:46:43.698185Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2024-12-12T21:18:49.517Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:49.517Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:49.517Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:49.517Z] Checked if tokens are valid: true, expires at: 1734041888478
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2024-12-12T21:18:49.518Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:49.518Z] Checked if tokens are valid: true, expires at: 1734041888478
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-12-12T21:18:49.518Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:49.518Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:49.518Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-12T21:18:49.518Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:18:49.519Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-12-12T21:18:49.519Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:18:49.520Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudbuild.googleapis.com [none]
+[debug] [2024-12-12T21:18:49.520Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudbuild.googleapis.com x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:18:49.521Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/artifactregistry.googleapis.com [none]
+[debug] [2024-12-12T21:18:49.521Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/artifactregistry.googleapis.com x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:18:50.154Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudbuild.googleapis.com 200
+[debug] [2024-12-12T21:18:50.154Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-12-12T21:18:51.038Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/runtimeconfig.googleapis.com 200
+[debug] [2024-12-12T21:18:51.039Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-12-12T21:18:51.054Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/artifactregistry.googleapis.com 200
+[debug] [2024-12-12T21:18:51.054Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-12-12T21:18:51.077Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-12T21:18:51.077Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-12-12T21:18:51.078Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:51.078Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:51.078Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/safar-6b838/adminSdkConfig [none]
+[debug] [2024-12-12T21:18:51.963Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/safar-6b838/adminSdkConfig 200
+[debug] [2024-12-12T21:18:51.963Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/safar-6b838/adminSdkConfig {"projectId":"safar-6b838","databaseURL":"https://safar-6b838-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"safar-6b838.appspot.com","locationId":"us-central"}
+[debug] [2024-12-12T21:18:51.964Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:51.964Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:51.964Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs [none]
+[debug] [2024-12-12T21:18:52.445Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs 200
+[debug] [2024-12-12T21:18:52.445Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs {"configs":[{"name":"projects/safar-6b838/configs/google"}]}
+[debug] [2024-12-12T21:18:52.445Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:52.445Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:52.445Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables [none]
+[debug] [2024-12-12T21:18:52.761Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables 200
+[debug] [2024-12-12T21:18:52.761Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables {"variables":[{"name":"projects/safar-6b838/configs/google/variables/maps/api_key","updateTime":"2024-09-20T22:30:02.502139656Z"},{"name":"projects/safar-6b838/configs/google/variables/maps_api_key","updateTime":"2024-09-20T23:22:02.660361155Z"}]}
+[debug] [2024-12-12T21:18:52.762Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:52.762Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:52.762Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:52.762Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:18:52.762Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps/api_key [none]
+[debug] [2024-12-12T21:18:52.762Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps_api_key [none]
+[debug] [2024-12-12T21:18:53.065Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps/api_key 200
+[debug] [2024-12-12T21:18:53.065Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps/api_key {"name":"projects/safar-6b838/configs/google/variables/maps/api_key","updateTime":"2024-09-20T22:30:02.502139656Z","text":"AIzaSyB-DbkubPy5AhkZJX14fR1x2m8VnbG0_PA"}
+[debug] [2024-12-12T21:18:53.291Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps_api_key 200
+[debug] [2024-12-12T21:18:53.291Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps_api_key {"name":"projects/safar-6b838/configs/google/variables/maps_api_key","updateTime":"2024-09-20T23:22:02.660361155Z","text":"AIzaSyB-DbkubPy5AhkZJX14fR1x2m8VnbG0_PA"}
+[debug] [2024-12-12T21:18:53.292Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-12-12T21:18:54.705Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.12.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-12-12T21:18:54.706Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-12-12T21:18:54.707Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-12-12T21:18:54.714Z] Found firebase-functions binary at 'D:\Work\FYP\Safar\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-12-12T21:18:54.754Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8677/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8677/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[info] Serving at port 8677
+
+[debug] [2024-12-12T21:19:05.118Z] FetchError: request to http://127.0.0.1:8677/__/functions.yaml failed, reason: Parse Error: Expected HTTP/
+    at ClientRequest.<anonymous> (C:\Users\mrg18\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at Socket.socketOnData (node:_http_client:544:9)
+    at Socket.emit (node:events:518:28)
+    at Socket.emit (node:domain:488:12)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-12-12T21:19:43.079Z] ----------------------------------------------------------------------
+[debug] [2024-12-12T21:19:43.082Z] Command:       D:\Softwares\node.js\node.exe C:\Users\mrg18\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2024-12-12T21:19:43.082Z] CLI Version:   13.28.0
+[debug] [2024-12-12T21:19:43.082Z] Platform:      win32
+[debug] [2024-12-12T21:19:43.083Z] Node Version:  v20.11.1
+[debug] [2024-12-12T21:19:43.083Z] Time:          Fri Dec 13 2024 02:19:43 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-12-12T21:19:43.083Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-12T21:19:43.153Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2024-12-12T21:19:43.158Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-12T21:19:43.158Z] > authorizing via signed-in user (mrg18188@gmail.com)
+[debug] [2024-12-12T21:19:43.159Z] [iam] checking project safar-6b838 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-12-12T21:19:43.160Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:43.160Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:43.161Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions [none]
+[debug] [2024-12-12T21:19:43.161Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:19:43.161Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-12-12T21:19:44.589Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions 200
+[debug] [2024-12-12T21:19:44.589Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-12-12T21:19:44.589Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:44.589Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:44.590Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/safar-6b838/serviceAccounts/safar-6b838@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-12-12T21:19:44.590Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/safar-6b838/serviceAccounts/safar-6b838@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-12-12T21:19:45.956Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/safar-6b838/serviceAccounts/safar-6b838@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-12-12T21:19:45.956Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/safar-6b838/serviceAccounts/safar-6b838@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'safar-6b838'...
+[info] 
+[info] i  deploying functions 
+[debug] [2024-12-12T21:19:45.959Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:45.959Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:45.959Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838 [none]
+[debug] [2024-12-12T21:19:46.276Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838 200
+[debug] [2024-12-12T21:19:46.276Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/safar-6b838 {"projectNumber":"1048390334337","projectId":"safar-6b838","lifecycleState":"ACTIVE","name":"Safar","labels":{"firebase":"enabled"},"createTime":"2024-09-19T20:46:43.698185Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2024-12-12T21:19:46.278Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:46.278Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:46.278Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:46.278Z] Checked if tokens are valid: true, expires at: 1734041888478
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2024-12-12T21:19:46.278Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:46.278Z] Checked if tokens are valid: true, expires at: 1734041888478
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-12-12T21:19:46.279Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:46.279Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:46.279Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-12T21:19:46.279Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:19:46.280Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-12-12T21:19:46.280Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:19:46.280Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudbuild.googleapis.com [none]
+[debug] [2024-12-12T21:19:46.280Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudbuild.googleapis.com x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:19:46.281Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/artifactregistry.googleapis.com [none]
+[debug] [2024-12-12T21:19:46.281Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/artifactregistry.googleapis.com x-goog-quota-user=projects/safar-6b838
+[debug] [2024-12-12T21:19:46.925Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/artifactregistry.googleapis.com 200
+[debug] [2024-12-12T21:19:46.925Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-12-12T21:19:47.839Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudbuild.googleapis.com 200
+[debug] [2024-12-12T21:19:47.839Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-12-12T21:19:47.851Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/runtimeconfig.googleapis.com 200
+[debug] [2024-12-12T21:19:47.851Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-12-12T21:19:47.864Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-12T21:19:47.864Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/safar-6b838/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-12-12T21:19:47.864Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:47.864Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:47.865Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/safar-6b838/adminSdkConfig [none]
+[debug] [2024-12-12T21:19:48.737Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/safar-6b838/adminSdkConfig 200
+[debug] [2024-12-12T21:19:48.737Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/safar-6b838/adminSdkConfig {"projectId":"safar-6b838","databaseURL":"https://safar-6b838-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"safar-6b838.appspot.com","locationId":"us-central"}
+[debug] [2024-12-12T21:19:48.737Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:48.737Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:48.737Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs [none]
+[debug] [2024-12-12T21:19:49.278Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs 200
+[debug] [2024-12-12T21:19:49.278Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs {"configs":[{"name":"projects/safar-6b838/configs/google"}]}
+[debug] [2024-12-12T21:19:49.279Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:49.279Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:49.279Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables [none]
+[debug] [2024-12-12T21:19:49.586Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables 200
+[debug] [2024-12-12T21:19:49.586Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables {"variables":[{"name":"projects/safar-6b838/configs/google/variables/maps_api_key","updateTime":"2024-09-20T23:22:02.660361155Z"},{"name":"projects/safar-6b838/configs/google/variables/maps/api_key","updateTime":"2024-09-20T22:30:02.502139656Z"}]}
+[debug] [2024-12-12T21:19:49.586Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:49.586Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:49.586Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:49.587Z] Checked if tokens are valid: true, expires at: 1734041888478
+[debug] [2024-12-12T21:19:49.587Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps_api_key [none]
+[debug] [2024-12-12T21:19:49.587Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps/api_key [none]
+[debug] [2024-12-12T21:19:49.887Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps_api_key 200
+[debug] [2024-12-12T21:19:49.887Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps_api_key {"name":"projects/safar-6b838/configs/google/variables/maps_api_key","updateTime":"2024-09-20T23:22:02.660361155Z","text":"AIzaSyB-DbkubPy5AhkZJX14fR1x2m8VnbG0_PA"}
+[debug] [2024-12-12T21:19:50.597Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps/api_key 200
+[debug] [2024-12-12T21:19:50.597Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/safar-6b838/configs/google/variables/maps/api_key {"name":"projects/safar-6b838/configs/google/variables/maps/api_key","updateTime":"2024-09-20T22:30:02.502139656Z","text":"AIzaSyB-DbkubPy5AhkZJX14fR1x2m8VnbG0_PA"}
+[debug] [2024-12-12T21:19:50.598Z] Validating nodejs source
+[debug] [2024-12-12T21:19:51.978Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^6.1.2",
+    "stripe": "^16.12.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-12-12T21:19:51.978Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-12-12T21:19:51.980Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-12-12T21:19:51.987Z] Found firebase-functions binary at 'D:\Work\FYP\Safar\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-12-12T21:19:52.045Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8826/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8826/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[info] Serving at port 8826
+
+[debug] [2024-12-12T21:20:02.538Z] FetchError: request to http://127.0.0.1:8826/__/functions.yaml failed, reason: Parse Error: Expected HTTP/
+    at ClientRequest.<anonymous> (C:\Users\mrg18\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at Socket.socketOnData (node:_http_client:544:9)
+    at Socket.emit (node:events:518:28)
+    at Socket.emit (node:domain:488:12)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+[error] 
+[error] Error: An unexpected error has occurred.
